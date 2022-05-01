@@ -39,11 +39,48 @@ Colors:
 
 /**************************/
 
+* {
+    transition: .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
 body,
 html {
     width: 100%;
     height: 100%;
 }
+
+/******     Scroll Bar design   ******/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar:hover {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 1px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7ec22bab; 
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7dc22b;
+  }
+
+  /******   End of Scroll Bar design  ******/
 
 body,
 p {
@@ -186,7 +223,7 @@ a:hover {
 
 .btn-solid-lg {
     display: inline-block;
-    padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+    padding: 1.625rem 1.625rem 1.625rem 1.625rem;
     border: 1px solid #7dc22b;
     border-radius: 4px;
     background-color: #7dc22b;
@@ -515,7 +552,7 @@ a:hover {
 .header .header-content {
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background: linear-gradient(rgba(21, 35, 63, 0.5), rgba(21, 35, 63, 0.5));
+    background: linear-gradient(rgba(21, 35, 63, 0.733), rgba(21, 35, 63, 0.733));
     background-size: cover;
     text-align: center;
     display: flex;
@@ -553,10 +590,13 @@ a:hover {
 .header .h1-large {
     margin-bottom: 2.25rem;
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.75rem;
 }
 
+.container-1{
+    margin-top: -200px;
+}
 
 /************************/
 
@@ -565,10 +605,106 @@ a:hover {
 
 
 /************************/
+/*.first-card{
+   
+    background-color: #7dc22b;
+}*/
+.half_top{
+    background-color: #F9FAFC;
+}
+.section-title {
+    
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 0;
+    font-size: 32px;
+    color: #000;
+    
+}
+.section-title::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -85px;
+    width: 50px;
+    height: 2px;
+    background: #7DC22B;
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -85px;
+    width: 50px;
+    height: 2px;
+    background: #7DC22B;
+}
+.tt{
+    margin-top: 70px;
+}
+
+.row_1{
+    padding-top: -15px;
+    padding-bottom: 125px !important;
+}
+
+.row_2{
+    margin-top: -120px !important;
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 15px !important
+}
+
+.row{
+    padding-bottom: 30px;
+}
+
+.icon_1{
+    margin-top: -35px !important;
+}
+
+.about_sec h5 {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.head_section {
+    margin-bottom: 30px;
+}
+
+.head_section p {
+    margin: 25px 0 0;
+}
+
+
+
+ul.about-section1-ul-1 li {
+    margin-bottom: 10px;
+    color: #333;
+    list-style: none;
+    text-align: left;
+}
+
+ul.about-section1-ul-1 li:before {
+    content: "\21AF";
+    color: #7DC22B;
+    font-weight: 700;
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+
+.card{
+
+background-color: transparent;
+
+}
+
 
 .cards-1 {
-    padding-top: 7rem;
-    padding-bottom: 8.25rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -943,6 +1079,7 @@ a:hover {
 }
 
 
+
 /******************/
 
 
@@ -1132,6 +1269,19 @@ a:hover {
 
 /*************************/
 
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+    .section-title::before{
+        display: none;
+    }
+    .section-title::after{
+        display: none;
+    }
+    
+   
+}
+
+
 
 /* Min-width 768px */
 
@@ -1140,6 +1290,11 @@ a:hover {
     .header .header-content {
         padding-top: 15rem;
         padding-bottom: 13rem;
+    }
+    .h2-heading {
+        width: 10x;
+        margin-right: auto;
+        margin-left: auto;
     }
     /* end of header */
     /* Statistics */
@@ -1176,7 +1331,7 @@ a:hover {
 @media (min-width: 992px) {
     /* General Styles */
     .h2-heading {
-        width: 35.25rem;
+        width: fit-content;
         margin-right: auto;
         margin-left: auto;
     }
@@ -1246,7 +1401,7 @@ a:hover {
     }
     .header .h1-large {
         margin-bottom: 2.75rem;
-        font-size: 5rem;
+        font-size: 3.5rem;
         line-height: 5.75rem;
     }
     /* end of header */
@@ -1365,6 +1520,13 @@ a:hover {
     .header {
         height: 100vh;
     }
+
+    .h2-heading {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .header .header-content {
         display: flex;
         flex-direction: column;
