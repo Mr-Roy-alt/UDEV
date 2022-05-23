@@ -768,7 +768,7 @@ background-color: transparent;
 
 .split .area-1 {
     height: 430px;
-    background: url('../images/girl\ look.jpeg');
+    background: url('../images/office-table.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1694,3 +1694,33 @@ background-color: transparent;
 
 
 /* end of min-width 1200px */
+
+/*------ Articles styles ------*/
+.main-header{
+    width: 400px;
+    padding: 10px;
+}
+.topic-header{
+    background-color: #7ec22b;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px !important;
+}
+
+.quotes{
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.quote{
+    font-weight: 800;
+    font-size: larger;
+    color: #7ec22b;
+    position: relative;
+}
+.numeration{
+    color: #7ec22b;
+}
+.fa-square{
+    color: #7ec22b;
+}
