@@ -53,6 +53,7 @@ html {
     
     width: 100%;
     height: 100%;
+    
 }
 
 /******     Scroll Bar design   ******/
@@ -536,7 +537,7 @@ a:hover {
 
 .header {
     position: relative;
-    
+    overflow: hidden;
 }
 
 .header #video-background {
@@ -548,7 +549,7 @@ a:hover {
     width: auto;
     height: auto;
     z-index: -100;
-   
+    
 }
 
 .header .header-content {
@@ -610,14 +611,16 @@ a:hover {
    
     background-color: #7dc22b;
 }*/
-.half_top{
+
+
+/*.half_top{
     
     background: url('../images/88.png'), url('../images/87.png');
     background-size: 100vh;
     background-repeat: no-repeat;
     background-position: left, right;
     z-index: -10;
-}
+}*/
 
 .section-title {
     
@@ -1310,9 +1313,32 @@ background-color: transparent;
 /*************************/
 
 /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 488px) {
+    /*.header-1{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+    }
+    */
+    .logo-h1{
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     body{
         overflow-x: hidden;
+    }
+    .header .header-content {
+        padding-top: 5rem;
+        padding-bottom: 9rem;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .section-title::before{
         display: none;
@@ -1351,9 +1377,9 @@ background-color: transparent;
     }
     /* end of header */
 
-    body{
+    /*body{
         overflow-x: hidden;
-    }
+    }*/
 
 
     /* Statistics */
