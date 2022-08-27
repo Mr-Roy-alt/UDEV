@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="title" content="UDEV-TECHZ">
-    <meta name="description" content="We Are The Universal Development Technology Digital Agency. Our Mission is to Provide a wide variety of Services that Improves Every Client's Business">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="The best 2022 web development startup ">
+    <meta name="description" content="We Are The Universal Development Technology Digital Agency. Our Mission is to Provide a spectrum of Services that Improves Every Client's Business. We aim to Meet Our Customer Requirements as well as Our Commitments by offering Best Services and Solutions in the realm of ever changing World of Technology.">
     <meta name="keywords" content="website development company, web design company, web development company, website developer, web development services, web development agency, website developers, website developer near me, website designing company, best web development company, website development services, shopify web designer, best website development company, custom web development services, website design and development services, best web designer, bespoke web design, web development services company, website development agency, agency web design, website developer freelancer, web design company website, website and app developers, outsource website development, best website for web development, top web development agencies, best websites for developers, find a website developer, best freelance website for developers, web development on mobile, web development studios, at web design">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://udevtechz.com/">
+    <meta property="og:title" content="The best 2022 web development startup ">
+    <meta property="og:description" content="We Are The Universal Development Technology Digital Agency. Our Mission is to Provide a spectrum of Services that Improves Every Client's Business. We aim to Meet Our Customer Requirements as well as Our Commitments by offering Best Services and Solutions in the realm of ever changing World of Technology.">
+    <meta property="og:image" content="https://metatags.io/images/udev-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://udevtechz.com/">
+    <meta property="twitter:title" content="The best 2022 web development startup ">
+    <meta property="twitter:description" content="We Are The Universal Development Technology Digital Agency. Our Mission is to Provide a spectrum of Services that Improves Every Client's Business. We aim to Meet Our Customer Requirements as well as Our Commitments by offering Best Services and Solutions in the realm of ever changing World of Technology.">
+    <meta property="twitter:image" content="https://udevtechz.com/images/udev-logo.png">
+
+    <!-- SEO Robot-->
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -25,6 +43,10 @@
     <!-- Webpage Title -->
     <title>UDEV-TECHZ</title>
 
+    <!-- Page preloader -->
+    <link rel="preload" href="css/swiper.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -33,23 +55,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 
     <!-- Favicon  -->
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         $(document).ready(function () {
         $('.collapse').collapse
         });
-        
-    </script>
+    </script> --->
 
-</head>
 
 <style>
     a.title {
@@ -59,9 +80,42 @@
     .title h1 {
         color: #7dc22b;
     }
+
+    /* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #7dc22b;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 </style>
 
-<body>
+</head>
+
+
+
+
+<body onload="pageLoader()" style="margin:0;">
 
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
@@ -191,7 +245,7 @@
                 <h2 class="section-title tt" data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1200">Our Mission</h2>
-                <h5 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">Our Mission is to Provide Spectrum of Services that Improves Every Client&#8217;s Business.</h5>
+                <h5 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">Our Mission is to Provide a Spectrum of Services that Improves Every Client&#8217;s Business.</h5>
                 <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="330">Our Prime Mission is to Meet Customer Requirements as well as Our Commitments by offering Best Services and Solutions in the realm of ever changing World of Technology.</p>
                 <h5 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="390">Our Master Planning Includes:</h5>
               </div>
@@ -492,7 +546,7 @@
                 <div class="col-lg-5">
                     <div class="text-container" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                         <h2>Database Management Services</h2>
-                        <p class="mt-2">Am if number no up period regard sudden better. Decisively surrounded all admiration and not you. Out particular sympathize not favourable introduced insipidity but ham rather</p>
+                        <p class="mt-2">Technology breakthroughs have opened the floodgates for massive amounts of data to rush into the system. With so much data coming in from so many different places and in so many different formats, and managing it becomes a key challenge.</p>
                         <a class="read-more no-line green" href="dataservices.html">Read more <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                     <!-- end of text-container -->
@@ -664,7 +718,7 @@
                                 <div class="swiper-slide">
                                     <img class="testimonial-image" src="images/client-5.png" alt="client-5">
                                     <p class="testimonial-text">“UDEV-TECHZ is a web development company that has helped me in countless ways. They were very professional with their work, and went above and beyond my expectations in order to provide the best possible service. I would recommend that anyone looking for a modern web developer to contact UDEV-TECHZ.”</p>
-                                    <div class="testimonial-author">MOHAMMAD K.</div>
+                                    <div class="testimonial-author">Kennedy K.</div>
                                     <div class="testimonial-position">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -925,7 +979,6 @@
     </div>
     <!-- end of copyright -->
     <!-- end of copyright -->
-
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
